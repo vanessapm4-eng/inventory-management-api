@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Inventario</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <h1>Gestión de Inventario</h1>
+
+  <!-- FORMULARIO -->
+  <section class="formulario">
+    <h2 id="form-titulo">Nuevo Producto</h2>
+    <input type="hidden" id="edit-id"/>
+
+    <div class="campo">
+      <label>Nombre:</label>
+      <input type="text" id="f-nombre" placeholder="Nombre del producto"/>
+    </div>
+    <div class="campo">
+      <label>Descripción:</label>
+      <textarea id="f-descripcion" placeholder="Descripción..."></textarea>
+    </div>
+    <div class="campo">
+      <label>Precio ($):</label>
+      <input type="number" id="f-precio" placeholder="0.00" step="0.01"/>
+    </div>
+    <div class="campo">
+      <label>Stock:</label>
+      <input type="number" id="f-stock" placeholder="0"/>
+    </div>
+    <div class="campo">
+      <label>Categoría:</label>
+      <select id="f-categoria">
+        <option value="">-- Seleccionar --</option>
+        <option value="electronica">Electrónica</option>
+        <option value="ropa">Ropa</option>
+        <option value="alimentos">Alimentos</option>
+        <option value="herramientas">Herramientas</option>
+        <option value="otros">Otros</option>
+      </select>
+    </div>
+    <div class="campo">
+      <label>Fecha de ingreso:</label>
+      <input type="date" id="f-fecha_ingreso"/>
+    </div>
+    <div class="campo">
+      <label>Peso (kg):</label>
+      <input type="number" id="f-peso_kg" placeholder="0.0" step="0.01"/>
+    </div>
+    <div class="campo">
+      <label>URL Imagen:</label>
+      <input type="url" id="f-imagen_url" placeholder="https://..."/>
+    </div>
+    <div class="campo">
+      <label><input type="checkbox" id="f-activo" checked/> Activo</label>
+    </div>
+
+    <div class="botones">
+      <button class="btn-guardar" onclick="submitForm()" id="btn-guardar">Guardar</button>
+      <button class="btn-cancelar" onclick="resetForm()" id="btn-cancelar" style="display:none">Cancelar</button>
+    </div>
+    <p id="mensaje"></p>
+  </section>
+
+  <hr/>
+
+  <!-- TABLA -->
+  <section class="tabla-section">
+    <h2>Productos registrados</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Categoría</th>
+          <th>Precio</th>
+          <th>Stock</th>
+          <th>Activo</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="tabla-body">
+        <tr><td colspan="7">Cargando...</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
