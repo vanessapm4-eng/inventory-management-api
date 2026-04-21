@@ -16,7 +16,7 @@ Una API permite que diferentes sistemas se comuniquen entre sí y compartan info
 - Actualizar información de productos  
 - Eliminar productos del sistema
 
-Se realizaron pruebas considerando:
+## Se realizaron pruebas considerando:
 
 - Validación de operaciones CRUD (crear, consultar, actualizar, eliminar)
 - Pruebas con datos válidos e inválidos
