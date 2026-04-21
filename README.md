@@ -3,8 +3,6 @@
 ## Descripción
 API desarrollada para la gestión de inventarios, permitiendo registrar, consultar, actualizar y eliminar productos de forma estructurada.
 
-Una API permite que diferentes sistemas se comuniquen entre sí y compartan información de manera automática :contentReference[oaicite:0]{index=0}, lo que hace posible gestionar datos de inventario de forma eficiente.
-
 ## Tecnologías utilizadas
 - Python  
 -  Django 
@@ -49,7 +47,6 @@ Se documentaron casos de prueba y resultados en archivos externos:
 
 - Estrategia de pruebas  
 - Casos de prueba (Excel)  
-
 
 ## Cómo ejecutar el proyecto
 1. Clonar repositorio  
