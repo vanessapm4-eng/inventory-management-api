@@ -52,6 +52,14 @@ Se documentaron casos de prueba y resultados en archivos externos:
 
 
 ## Cómo ejecutar el proyecto
-1. Clonar el repositorio:
-   ```bash
-   git clone https://github.com/vanessapm4-eng/inventario-api.git
+1. Clonar repositorio  
+2. Crear entorno virtual:
+   python -m venv venv  
+   source venv/bin/activate (Linux/Mac)  
+   venv\Scripts\activate (Windows)  
+
+3. Instalar dependencias:
+   pip install -r requirements.txt  
+
+4. Ejecutar:
+   python app.py 
